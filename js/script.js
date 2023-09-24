@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Remova a tela de carregamento
+  document.querySelector(".loading-screen").style.display = "none";
+});
+
 function myFunction() {
     var dropdown = document.getElementById("myDropdown");
     dropdown.classList.toggle("show");
