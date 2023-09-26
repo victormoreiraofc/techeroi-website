@@ -127,7 +127,7 @@ h1 {
     background-color: #6B6B6B;
     border: solid 1px;
     border-radius: 15px;
-    width: 880px;
+    width: 780px;
     text-align: right;
     position: left;
     display: flex;
@@ -135,7 +135,7 @@ h1 {
     justify-content: space-between;
     padding: 5px;
     border-radius: 300px;
-    border: 3px solid #FFF;
+    border: 2px solid #FFF;
 }
 
 #search-text {
@@ -143,7 +143,7 @@ h1 {
     background-color: transparent;
     padding-left: 5px;
     font-style: italic;
-    font-size: 18px;
+    font-size: 15px;
     color: #D3CFCF;
     border: none;
     height: 32px;
@@ -167,14 +167,14 @@ h1 {
 }
 
 .caracter {
-    width: 261px;
-    height: 217px;
+    width: 240px;
+    height: 200px;
     border-radius: 10px;
 }
 
 .name {
     color: #EBE307;
-    font-size: 11pt;
+    font-size: 10.5pt;
     background-color: #822235;
     border-radius: 50px;
     margin: 2px;
@@ -182,16 +182,16 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 17px 4px 17px;
+    padding: 3px 17px;
     position: relative;
-    top: -15%;
+    top: -12%;
 }
 
 .info-container {
-    width: 261px;
-    height: 409px;
+    width: 240px;
+    height: 370px;
     background-color: #D9D9D9;
-    margin: 1.5rem;
+    margin: 1.0rem;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -209,7 +209,7 @@ h1 {
 .container {
     display: flex;
     padding-inline: 5%;
-    padding: 20px;
+    padding: 15px;
     justify-content: center;
 }
 
@@ -223,20 +223,19 @@ h1 {
 }
 
 .information {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: #822235;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: justify;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
+    position: static;
+    padding: 0%;
 }
 
 .information p {
     color: white;
+    font-size: 16px;
 }
 
 .data {
@@ -259,38 +258,39 @@ h1 {
     text-align: center;
     color: black;
     position: relative;
-    margin: 1%;
+    margin: 2%;
+    font-size: 95%;
 }
 
-.caracter-text-ts,
 .caracter-text-vs {
+    top: -12%;
+}
+
+.caracter-text-rw {
     top: -14%;
 }
 
-.caracter-text-rw,
+.caracter-text-ts,
 .caracter-text-rr {
-    top: -16%;
+    top: -12%;
 }
 
 .caracter-text-ll {
-    top: -11%;
+    top: -10%;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+#footer {
     background-color: #671828;
     color: #AAA;
-    padding: 13px;
+    padding: 10px;
     text-align: center;
+    position: static;
 }
 
 .data-text {
     margin: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 0%;
     color: #D3CFCF;
     text-align: justify;
@@ -318,26 +318,112 @@ footer {
     position: relative;
     top: -5%;
     bottom: 0;
-    width: 249.032px;
+    width: 240px;
     height: 1px;
     background-color: #868686;
 }
 
-@media screen and (max-width: 768px) {
-    .logo-container {
-        text-align: center;
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .caracter {
+        width: 240px;
+        height: 200px;
+    }
+
+    .name {
+        font-size: 10.5pt;
+        padding: 3px 17px;
+        top: -12%;
+    }
+
+    .info-container {
+        width: 240px;
+        height: 370px;
+        margin: 1.0rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .information p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #footer {
         padding: 10px;
     }
 
-    .logo-container img {
-        max-width: 80%;
-        height: auto;
+    #search-div {
+        width: 780px;
+    }
+
+    #search-button {
+        margin-right: 15px;
     }
 
     .dropbtn {
-        padding: 2% 5%;
-        font-size: 0.8em;
-        width: 100%;
+        padding: 2% 10%;
+        font-size: 1.0em;
+    }
+
+    .dropdown {
+        top: 2%;
+        right: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .caracter {
+        width: 180px;
+        height: 150px;
+    }
+
+    .name {
+        font-size: 9.5pt;
+        padding: 2px 12px;
+        top: -10%;
+    }
+
+    .info-container {
+        width: 180px;
+        height: 280px;
+        margin: 0.5rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .information p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    #footer {
+        padding: 5px;
+    }
+
+    #search-div {
+        width: 90%;
+    }
+
+    #search-button {
+        margin-right: 10px;
+    }
+
+    .dropbtn {
+        padding: 1.5% 8%;
+        font-size: 0.9em;
+        width: auto;
     }
 
     .dropdown {

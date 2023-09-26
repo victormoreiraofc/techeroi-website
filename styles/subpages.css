@@ -67,20 +67,19 @@ h1 {
 }
 
 .information {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: #822235;
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-align: justify;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
+    position: static;
+    padding: 0%;
 }
 
 .information p {
     color: white;
+    font-size: 16px;
 }
 
 .data {
@@ -95,21 +94,18 @@ h1 {
     line-height: normal;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+#footer {
     background-color: #671828;
     color: #AAA;
-    padding: 13px;
+    padding: 10px;
     text-align: center;
+    position: static;
 }
 
 .data-text {
     margin: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 0%;
     color: #D3CFCF;
     text-align: justify;
@@ -137,7 +133,7 @@ footer {
     width: 361px;
     height: 552px;
     margin: 70px;
-    margin-top: 50px;
+    margin-top: 0%;
     border-radius: 10px;
 }
 
@@ -157,16 +153,27 @@ footer {
 
 .title-name {
     position: absolute;
-    top: 0;
+    top: 5%;
     left: 0;
     padding: 20px;
     color: #EBE307;
-    font-family: Lalezar;
-    font-size: 50px;
+    font-family: 'Lalezar', sans-serif;
+    font-size: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    z-index: 999; /* Certifique-se de que o título esteja acima de outros elementos */
+    z-index: 999;
+}
+
+h2 {
+    font-size: 2.2em;
+    color: white;
+    font-family: 'Lalezar', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 2%;
 }
 
 @media screen and (max-width: 768px) {
