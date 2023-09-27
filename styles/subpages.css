@@ -179,17 +179,19 @@ h2 {
 
 .course-container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    margin-left: 4%;
+    justify-content: flex-start;
+    margin-left: 2%;
 }
 
 .course {
     background-color: white;
     border-radius: 10px;
-    margin: 20px;
+    margin: 40px;
     margin-top: 2%;
     height: 370px;
+    flex: 0 0 calc(14% - 50px);
 }
 
 .course p {
@@ -198,28 +200,75 @@ h2 {
 }
 
 .course-image {
-    width: 200px;
+    width: 220px;
     height: 200px;
     border-radius: 10px;
 }
 
-.side-divider,
-.side-divider-rw,
-.side-divider-ll {
+.side-divider-ia,
+.side-divider-robot,
+.side-divider-py,
+.side-divider-jv,
+.side-divider-c,
+.side-divider-sa,
+.side-divider-cs,
+.side-divider-rv {
     position: relative;
     bottom: 0;
-    width: 200px;
+    width: 220px;
     height: 1px;
     background-color: #868686;
 }
 
-.side-divider {
-    top: 10%;
+.side-divider-ia,
+.side-divider-c {
+    top: 14%;
 }
 
-.school-name {
+.side-divider-robot,
+.side-divider-py,
+.side-divider-jv,
+.side-divider-sa {
+    top: 4%;
+}
+
+.side-divider-cs {
+    top: 8%;
+}
+
+.side-divider-rv {
+    top: 18%;
+}
+
+.school-name-ia,
+.school-name-robot,
+.school-name-py,
+.school-name-jv,
+.school-name-sa,
+.school-name-cs,
+.school-name-rv,
+.school-name-c {
     position: relative;
-    top: 12%;
+}
+
+.school-name-ia,
+.school-name-c {
+    top: 16.5%;
+}
+
+.school-name-robot,
+.school-name-py,
+.school-name-jv,
+.school-name-sa {
+    top: 6.5%;
+}
+
+.school-name-cs {
+    top: 11.5%;
+}
+
+.school-name-rv {
+    top: 21.5%;
 }
 
 .course-image,
@@ -229,6 +278,11 @@ h2 {
 
 .course:hover {
     scale: 1.1;
+}
+
+.course-text {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 @media screen and (max-width: 768px) {
