@@ -38,6 +38,7 @@ body {
     background-position: left top;
     background-attachment: scroll;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 a {
@@ -90,6 +91,7 @@ h1 {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    font-size: 0.9em;
 }
 
 .dropdown-content a {
@@ -98,6 +100,7 @@ h1 {
     text-decoration: none;
     display: flex;
     align-items: center;
+    font-size: 0.9em;
 }
 
 .dropdown-content a:hover {
@@ -239,7 +242,7 @@ h1 {
 }
 
 .data {
-    padding: 10px 90px 10px 90px;
+    padding: 10px 100px 10px 100px;
     text-align: center;
     justify-content: center;
     color: #FAFF00;
@@ -260,22 +263,6 @@ h1 {
     position: relative;
     margin: 2%;
     font-size: 95%;
-}
-
-.caracter-text-vs {
-    top: -12%;
-}
-
-.caracter-text-rw {
-    top: -14%;
-}
-
-.caracter-text-ts,
-.caracter-text-rr {
-    top: -12%;
-}
-
-.caracter-text-ll {
     top: -10%;
 }
 
@@ -314,13 +301,62 @@ h1 {
     line-height: normal;
 }
 
-.divisor-lateral {
+.side-divider,
+.side-divider-rw,
+.side-divider-ll {
     position: relative;
-    top: -5%;
     bottom: 0;
     width: 240px;
     height: 1px;
     background-color: #868686;
+}
+
+.side-divider {
+    top: -5%;
+}
+
+.side-divider-rw {
+    top: -1%;
+}
+
+.side-divider-ll {
+    top: -10%;
+}
+
+.icon-like,
+.icon-click,
+.icon-like-rw,
+.icon-click-rw,
+.icon-like-ll,
+.icon-click-ll {
+    width: 8%;
+    max-width: 210px;
+}
+
+.icon-like {
+    margin-top: -5%;
+    margin-right: 25%;
+}
+
+.icon-click {
+    margin-top: -10%;
+    margin-left: 20%;
+}
+
+.icon-like-rw {
+    margin-top: 1%;
+    margin-right: 23%;
+}
+
+.icon-click-rw,
+.icon-click-ll {
+    margin-top: -11%;
+    margin-left: 23%;
+}
+
+.icon-like-ll {
+    margin-top: -13%;
+    margin-right: 23%;
 }
 
 @media screen and (min-width: 768px) {

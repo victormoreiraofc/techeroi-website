@@ -38,6 +38,7 @@ body {
     background-position: left top;
     background-attachment: scroll;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 a {
@@ -83,7 +84,7 @@ h1 {
 }
 
 .data {
-    padding: 10px 90px 10px 90px;
+    padding: 10px 100px 10px 100px;
     text-align: center;
     justify-content: center;
     color: #FAFF00;
@@ -174,6 +175,60 @@ h2 {
     line-height: normal;
     text-transform: uppercase;
     margin-left: 2%;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 4%;
+}
+
+.course {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 2%;
+    height: 370px;
+}
+
+.course p {
+    color: black;
+    text-align: center;
+}
+
+.course-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.side-divider,
+.side-divider-rw,
+.side-divider-ll {
+    position: relative;
+    bottom: 0;
+    width: 200px;
+    height: 1px;
+    background-color: #868686;
+}
+
+.side-divider {
+    top: 10%;
+}
+
+.school-name {
+    position: relative;
+    top: 12%;
+}
+
+.course-image,
+.course:hover :not(:hover) {
+    opacity: 0.95;
+}
+
+.course:hover {
+    scale: 1.1;
 }
 
 @media screen and (max-width: 768px) {
