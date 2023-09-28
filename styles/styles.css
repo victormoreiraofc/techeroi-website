@@ -1,41 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bayon&family=Lalezar&family=Rubik&display=swap');
 
-.loading-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 body {
-    background-image: url("/assets/others/background.png");
-    background-repeat: no-repeat;
-    background-position: left top;
+    background: url("/assets/others/background.png") no-repeat left top;
     background-attachment: scroll;
     background-size: cover;
     overflow-x: hidden;
@@ -247,7 +213,7 @@ h1 {
     justify-content: center;
     color: #FAFF00;
     font-family: 'Alfa Slab One', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -359,61 +325,8 @@ h1 {
     margin-right: 23%;
 }
 
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
-    .caracter {
-        width: 240px;
-        height: 200px;
-    }
-
-    .name {
-        font-size: 10.5pt;
-        padding: 3px 17px;
-        top: -12%;
-    }
-
-    .info-container {
-        width: 240px;
-        height: 370px;
-        margin: 1.0rem;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    .information p {
-        font-size: 16px;
-        margin-bottom: 10px;
-    }
-
-    #footer {
-        padding: 10px;
-    }
-
-    #search-div {
-        width: 780px;
-    }
-
-    #search-button {
-        margin-right: 15px;
-    }
-
-    .dropbtn {
-        padding: 2% 10%;
-        font-size: 1.0em;
-    }
-
-    .dropdown {
-        top: 2%;
-        right: 3%;
-    }
-}
-
 @media screen and (max-width: 767px) {
+
     body {
         font-size: 14px;
     }
@@ -465,5 +378,60 @@ h1 {
     .dropdown {
         top: 5%;
         right: 5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .caracter {
+        width: 240px;
+        height: 200px;
+    }
+
+    .name {
+        font-size: 10.5pt;
+        padding: 3px 17px;
+        top: -12%;
+    }
+
+    .info-container {
+        width: 240px;
+        height: 370px;
+        margin: 1.0rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .information p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    #footer {
+        padding: 10px;
+    }
+
+    #search-div {
+        width: 780px;
+    }
+
+    #search-button {
+        margin-right: 15px;
+    }
+
+    .dropbtn {
+        padding: 2% 10%;
+        font-size: 1.0em;
+    }
+
+    .dropdown {
+        top: 2%;
+        right: 3%;
     }
 }

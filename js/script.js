@@ -19,3 +19,12 @@ window.onclick = function (event) {
     }
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elementsToAnimate = document.querySelectorAll(".fade-in-element");
+  
+  elementsToAnimate.forEach(function (element, index) {
+      const delay = index * 200; 
+      element.style.animationDelay = delay + "ms";
+  });
+});
