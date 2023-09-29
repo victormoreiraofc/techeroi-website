@@ -1,7 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".loading-screen").style.display = "none";
-});
-
 function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   dropdown.classList.toggle("show");
@@ -46,3 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+function toggleLikeIcon(element) {
+  element.classList.toggle('active');
+}

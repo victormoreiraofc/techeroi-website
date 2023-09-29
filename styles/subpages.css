@@ -101,7 +101,7 @@ h1 {
 .caracter {
     width: 361px;
     height: 510px;
-    margin: 70px;
+    margin: 70px 70px 10px 70px;
     margin-top: 0%;
     border-radius: 10px;
 }
@@ -254,6 +254,26 @@ h2 {
     margin-right: 2%;
 }
 
+.icon-like {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 1px 1px 1% 70px;
+    cursor: pointer;
+    background-image: url('/assets/icons/white-like.png');
+    background-size: cover;
+    transition: transform 0.3s ease, background-image 0.3s ease;
+}
+
+.icon-like.active {
+    background-image: url('/assets/icons/activate-like.png');
+    transform: scale(1.1);
+}
+
+.icon-like:hover {
+    background-image: url('/assets/icons/activate-like.png');
+}
+
 @media (max-width: 1200px) {
     .data {
         padding: 10px;
@@ -262,7 +282,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    .main-container {
+    .main-conteiner {
         flex-direction: column;
     }
 
