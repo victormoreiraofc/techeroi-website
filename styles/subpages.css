@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bayon&family=Lalezar&family=Rubik&display=swap');
 
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-carvao: #3D3C3C;
+    --cinza-prateado: #F5F5F5;
+    --preto-principal: #000000;
+    --cinza-ardosia: #6B6B6B;
+    --cinza-claro: #D3CFCF;
+    --amarelo-brilhante: #EBE307;
+    --vermelho-vinho: #822235;
+    --cinza-prata: #D9D9D9;
+    --amarelo-limao: #FAFF00;
+    --vermelho-tijolo: #671828;
+    --cinza-medio: #AAAAAA;
+    --cinza-escuro: #868686;
+    --cinza-escuro-claro: #555555;
+    --rubik: 'Rubik', sans-serif;
+    --alfa-slab-one: 'Alfa Slab One', sans-serif;
+    --lalezar: 'Lalezar', sans-serif;
+}
+
 body {
-    background-image: url("/assets/others/background.png");
-    background-repeat: no-repeat;
-    background-position: left top;
+    background: url("assets/others/background.png") no-repeat left top;
     background-attachment: scroll;
     background-size: cover;
     overflow-x: hidden;
@@ -14,7 +32,7 @@ a {
 }
 
 h1 {
-    color: #FFFFFF;
+    color: var(--branco-principal);
     margin-left: 20px;
 }
 
@@ -32,11 +50,11 @@ h1 {
     font-size: 1em;
     padding: 0;
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--rubik);
 }
 
 .information {
-    background-color: #822235;
+    background-color: var(--vermelho-vinho);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -47,7 +65,7 @@ h1 {
 }
 
 .information p {
-    color: white;
+    color: var(--branco-principal);
     font-size: 16px;
 }
 
@@ -55,8 +73,8 @@ h1 {
     padding: 10px 100px 10px 100px;
     text-align: center;
     justify-content: center;
-    color: #FAFF00;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--amarelo-limao);
+    font-family: var(--alfa-slab-one);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -64,8 +82,8 @@ h1 {
 }
 
 #footer {
-    background-color: #671828;
-    color: #AAA;
+    background-color: var(--vermelho-tijolo);
+    color: var(--cinza-medio);
     padding: 10px;
     text-align: center;
     position: static;
@@ -76,9 +94,9 @@ h1 {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 0%;
-    color: #D3CFCF;
+    color: var(--cinza-claro);
     text-align: justify;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--rubik);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -90,8 +108,8 @@ h1 {
     margin-left: -20%;
     margin-right: -20%;
     margin-top: 0%;
-    color: #D3CFCF;
-    font-family: 'Rubik', sans-serif;
+    color: var(--cinza-claro);
+    font-family: var(--rubik);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -99,9 +117,9 @@ h1 {
 }
 
 .caracter {
-    width: 361px;
-    height: 510px;
-    margin: 70px 70px 10px 70px;
+    width: 330px;
+    height: 480px;
+    margin: 1% 4% 1% 4%;
     margin-top: 0%;
     border-radius: 10px;
 }
@@ -111,13 +129,14 @@ h1 {
     flex-direction: row;
     justify-content: center;
     width: 95%;
-    color: #FFF;
+    color: var(--branco-principal);
     text-align: justify;
-    font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-family: var(--rubik);
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: -2%;
 }
 
 .title-name {
@@ -125,8 +144,8 @@ h1 {
     top: 5%;
     left: 0;
     padding: 20px;
-    color: #EBE307;
-    font-family: 'Lalezar', sans-serif;
+    color: var(--amarelo-brilhante);
+    font-family: var(--lalezar);
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -136,8 +155,8 @@ h1 {
 
 h2 {
     font-size: 2.2em;
-    color: white;
-    font-family: 'Lalezar', sans-serif;
+    color: var(--branco-principal);
+    font-family: var(--lalezar);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -154,7 +173,7 @@ h2 {
 }
 
 .course {
-    background-color: white;
+    background-color: var(--branco-principal);
     border-radius: 10px;
     margin: 35px;
     margin-top: 2%;
@@ -164,7 +183,7 @@ h2 {
 }
 
 .course p {
-    color: black;
+    color: var(--preto-principal);
     text-align: center;
 }
 
@@ -186,7 +205,7 @@ h2 {
     bottom: 0;
     width: 230px;
     height: 1px;
-    background-color: #868686;
+    background-color: var(--cinza-escuro);
 }
 
 .side-divider-ia,
@@ -255,10 +274,10 @@ h2 {
 }
 
 .icon-like {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     display: block;
-    margin: 1px 1px 1% 70px;
+    margin: 0.7% 0.1% 1% 4%;
     cursor: pointer;
     background-image: url('/assets/icons/white-like.png');
     background-size: cover;
@@ -267,11 +286,11 @@ h2 {
 
 .icon-like.active {
     background-image: url('/assets/icons/activate-like.png');
-    transform: scale(1.1);
 }
 
 .icon-like:hover {
     background-image: url('/assets/icons/activate-like.png');
+    transform: scale(1.1);
 }
 
 @media (max-width: 1200px) {

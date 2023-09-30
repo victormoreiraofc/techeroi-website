@@ -1,7 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bayon&family=Lalezar&family=Rubik&display=swap');
 
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-carvao: #3D3C3C;
+    --cinza-prateado: #F5F5F5;
+    --preto-principal: #000000;
+    --cinza-ardosia: #6B6B6B;
+    --cinza-claro: #D3CFCF;
+    --amarelo-brilhante: #EBE307;
+    --vermelho-vinho: #822235;
+    --cinza-prata: #D9D9D9;
+    --amarelo-limao: #FAFF00;
+    --vermelho-tijolo: #671828;
+    --cinza-medio: #AAAAAA;
+    --cinza-escuro: #868686;
+    --cinza-escuro-claro: #555555;
+    --rubik: 'Rubik', sans-serif;
+    --alfa-slab-one: 'Alfa Slab One', sans-serif;
+}
+
 body {
-    background: url("/assets/others/background.png") no-repeat left top;
+    background: url("assets/others/background.png") no-repeat left top;
     background-attachment: scroll;
     background-size: cover;
     overflow-x: hidden;
@@ -12,7 +31,7 @@ a {
 }
 
 h1 {
-    color: #FFFFFF;
+    color: var(--branco-principal);
     margin-left: 20px;
 }
 
@@ -27,8 +46,8 @@ h1 {
 }
 
 .dropbtn {
-    background-color: rgba(255, 255, 255, 0.0);
-    color: #FFFFFF;
+    background-color: transparent;
+    color: var(--branco-principal);
     padding: 1% 10% 1% 10%;
     font-size: 0.8em;
     border: 1px solid;
@@ -40,7 +59,7 @@ h1 {
 
 .dropbtn:hover,
 .dropbtn:focus {
-    background-color: #555;
+    background-color: var(--cinza-escuro-claro);
 }
 
 .dropdown {
@@ -52,7 +71,7 @@ h1 {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #3d3c3c;
+    background-color: var(--cinza-carvao);
     min-width: 120%;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -61,7 +80,7 @@ h1 {
 }
 
 .dropdown-content a {
-    color: #FFFFFF;
+    color: var(--branco-principal);
     padding: 5% 20% 5% 20%;
     text-decoration: none;
     display: flex;
@@ -70,8 +89,8 @@ h1 {
 }
 
 .dropdown-content a:hover {
-    background-color: #F5F5F5;
-    color: #000000;
+    background-color: var(--cinza-prateado);
+    color: var(--preto-principal);
 }
 
 .show {
@@ -93,7 +112,7 @@ h1 {
 }
 
 #search-div {
-    background-color: #6B6B6B;
+    background-color: var(--cinza-ardosia);
     border: solid 1px;
     border-radius: 15px;
     width: 780px;
@@ -104,7 +123,7 @@ h1 {
     justify-content: space-between;
     padding: 5px;
     border-radius: 300px;
-    border: 2px solid #FFF;
+    border: 2px solid var(--branco-principal);
 }
 
 #search-text {
@@ -113,7 +132,7 @@ h1 {
     padding-left: 5px;
     font-style: italic;
     font-size: 15px;
-    color: #D3CFCF;
+    color: var(--cinza-claro);
     border: none;
     height: 32px;
     width: 880px;
@@ -121,7 +140,7 @@ h1 {
 }
 
 #search-text::placeholder {
-    color: #D3CFCF;
+    color: var(--cinza-claro);
 }
 
 #search-text:focus {
@@ -132,7 +151,7 @@ h1 {
     font-size: 1em;
     padding: 0;
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--rubik);
 }
 
 .caracter {
@@ -142,9 +161,9 @@ h1 {
 }
 
 .name {
-    color: #EBE307;
+    color: var(--amarelo-brilhante);
     font-size: 10.5pt;
-    background-color: #822235;
+    background-color: var(--vermelho-vinho);
     border-radius: 50px;
     margin: 2px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.477);
@@ -159,7 +178,7 @@ h1 {
 .info-container {
     width: 240px;
     height: 370px;
-    background-color: #D9D9D9;
+    background-color: var(--cinza-prata);
     margin: 1.0rem;
     border-radius: 10px;
     cursor: pointer;
@@ -192,7 +211,7 @@ h1 {
 }
 
 .information {
-    background-color: #822235;
+    background-color: var(--vermelho-vinho);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -203,7 +222,7 @@ h1 {
 }
 
 .information p {
-    color: white;
+    color: var(--branco-principal);
     font-size: 16px;
 }
 
@@ -211,8 +230,8 @@ h1 {
     padding: 10px 100px 10px 100px;
     text-align: center;
     justify-content: center;
-    color: #FAFF00;
-    font-family: 'Alfa Slab One', sans-serif;
+    color: var(--amarelo-limao);
+    font-family: var(--alfa-slab-one);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -225,7 +244,7 @@ h1 {
 .caracter-text-rw,
 .caracter-text-ll {
     text-align: center;
-    color: black;
+    color: var(--preto-principal);
     position: relative;
     margin: 2%;
     font-size: 95%;
@@ -233,8 +252,8 @@ h1 {
 }
 
 #footer {
-    background-color: #671828;
-    color: #AAA;
+    background-color: var(--vermelho-tijolo);
+    color: var(--cinza-medio);
     padding: 10px;
     text-align: center;
     position: static;
@@ -245,9 +264,9 @@ h1 {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 0%;
-    color: #D3CFCF;
+    color: var(--cinza-claro);
     text-align: justify;
-    font-family: 'Rubik', sans-serif;
+    font-family: var(--rubik);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -259,8 +278,8 @@ h1 {
     margin-left: -20%;
     margin-right: -20%;
     margin-top: 0%;
-    color: #D3CFCF;
-    font-family: 'Rubik', sans-serif;
+    color: var(--cinza-claro);
+    font-family: var(--rubik);
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
@@ -274,7 +293,7 @@ h1 {
     bottom: 0;
     width: 240px;
     height: 1px;
-    background-color: #868686;
+    background-color: var(--cinza-escuro);
 }
 
 .side-divider {
