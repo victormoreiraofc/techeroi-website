@@ -85,6 +85,7 @@ h1 {
     background-color: var(--vermelho-tijolo);
     color: var(--cinza-medio);
     padding: 10px;
+    font-size: small;
     text-align: center;
     position: static;
 }
@@ -136,12 +137,12 @@ h1 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: -2%;
+    margin-top: -1%;
 }
 
 .title-name {
     position: absolute;
-    top: 5%;
+    top: 2%;
     left: 0;
     padding: 20px;
     color: var(--amarelo-brilhante);
@@ -277,7 +278,7 @@ h2 {
     width: 25px;
     height: 25px;
     display: block;
-    margin: 0.7% 0.1% 1% 4%;
+    margin: 0.3% 0.1% 1% 4%;
     cursor: pointer;
     background-image: url('/assets/icons/white-like.png');
     background-size: cover;
