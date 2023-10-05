@@ -457,3 +457,7 @@ h1 {
         right: 3%;
     }
 }
+
+#character-slider {
+    overflow-x: scroll;
+}
