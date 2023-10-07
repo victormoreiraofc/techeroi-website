@@ -22,7 +22,7 @@
 }
 
 body {
-    background: url("/assets/others/background.png") no-repeat left top;
+    background: url("../assets/others/background.png") no-repeat left top;
     background-attachment: scroll;
     background-size: cover;
     overflow-x: hidden;
