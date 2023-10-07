@@ -284,17 +284,17 @@ h2 {
     display: block;
     margin: 0.3% 0.1% 1% 4%;
     cursor: pointer;
-    background-image: url('/assets/icons/white-like.png');
+    background-image: url('../assets/icons/white-like.png');
     background-size: cover;
     transition: transform 0.3s ease, background-image 0.3s ease;
 }
 
 .icon-like.active {
-    background-image: url('/assets/icons/activate-like.png');
+    background-image: url('../assets/icons/activate-like.png');
 }
 
 .icon-like:hover {
-    background-image: url('/assets/icons/activate-like.png');
+    background-image: url('../assets/icons/activate-like.png');
     transform: scale(1.1);
 }
 
