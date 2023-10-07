@@ -15,6 +15,9 @@
     --cinza-medio: #AAAAAA;
     --cinza-escuro: #868686;
     --cinza-escuro-claro: #555555;
+    --scroll-bar-track: #f1f1f1;
+    --scroll-bar-thumb: #888;
+    --scroll-bar-thumb-hover: #555;
     --rubik: 'Rubik', sans-serif;
     --alfa-slab-one: 'Alfa Slab One', sans-serif;
     --lalezar: 'Lalezar', sans-serif;
@@ -25,15 +28,15 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--scroll-bar-track);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: var(--scroll-bar-thumb);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: var(--scroll-bar-thumb-hover);
 }
 
 body {
@@ -86,7 +89,7 @@ h1 {
 }
 
 .data {
-    padding: 10px 100px 10px 100px;
+    padding: 10px 90px 10px 90px;
     text-align: center;
     justify-content: center;
     color: var(--amarelo-limao);
@@ -108,8 +111,8 @@ h1 {
 
 .data-text {
     margin: 5%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 0%;
     color: var(--cinza-claro);
     text-align: justify;
@@ -185,7 +188,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     margin-left: 2%;
 }
 
@@ -312,6 +316,12 @@ h2 {
 .icon-like:hover {
     background-image: url('../assets/icons/activate-like.png');
     transform: scale(1.1);
+}
+
+.logo-nav {
+    top: 50%;
+    left: 0;
+    transform: translateY(10%); 
 }
 
 @media (max-width: 1200px) {
