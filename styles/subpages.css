@@ -178,8 +178,8 @@ h2 {
     border-radius: 10px;
     margin: 35px;
     margin-top: 2%;
-    height: 370px;
-    width: 240px;
+    height: 330px;
+    width: 220px;
     flex: 0 0 calc(14% - 50px);
 }
 
@@ -189,9 +189,13 @@ h2 {
 }
 
 .course-image {
-    width: 230px;
-    height: 200px;
+    width: 220px;
+    height: 180px;
     border-radius: 10px;
+}
+
+.course-text {
+    font-size: small;
 }
 
 .side-divider-ia,
@@ -204,29 +208,29 @@ h2 {
 .side-divider-rv {
     position: relative;
     bottom: 0;
-    width: 230px;
+    width: 220px;
     height: 1px;
     background-color: var(--cinza-escuro);
 }
 
 .side-divider-ia,
 .side-divider-c {
-    top: 14%;
+    top: 20%;
 }
 
 .side-divider-robot,
 .side-divider-py,
 .side-divider-jv,
 .side-divider-sa {
-    top: 4%;
+    top: 10%;
 }
 
 .side-divider-cs {
-    top: 8%;
+    top: 14%;
 }
 
 .side-divider-rv {
-    top: 18%;
+    top: 19%;
 }
 
 .school-name-ia,
@@ -242,18 +246,18 @@ h2 {
 
 .school-name-ia,
 .school-name-c {
-    top: 16.5%;
+    top: 22%;
 }
 
 .school-name-robot,
 .school-name-py,
 .school-name-jv,
 .school-name-sa {
-    top: 6.5%;
+    top: 13%;
 }
 
 .school-name-cs {
-    top: 11.5%;
+    top: 17%;
 }
 
 .school-name-rv {
@@ -266,7 +270,7 @@ h2 {
 }
 
 .course:hover {
-    scale: 1.1;
+    scale: 1.05;
 }
 
 .course-text {
