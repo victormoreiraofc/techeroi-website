@@ -85,11 +85,11 @@ h1 {
 
 .information p {
     color: var(--branco-principal);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .data {
-    padding: 10px 90px 10px 90px;
+    padding: 10px 100px 10px 100px;
     margin-left: -1%;
     text-align: center;
     justify-content: center;
@@ -112,7 +112,7 @@ h1 {
 
 .data-text {
     margin: 5%;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 10%;
     margin-top: 0%;
     color: var(--cinza-claro);
@@ -127,7 +127,7 @@ h1 {
 .data-text-dev {
     text-align: center;
     margin-left: -20%;
-    margin-right: -20%; 
+    margin-right: -20%;
     margin: 0% 0% 5% 0%;
     color: var(--cinza-claro);
     font-family: var(--rubik);
@@ -322,12 +322,66 @@ h2 {
 .logo-nav {
     top: 50%;
     left: 0;
-    transform: translateY(10%); 
+    transform: translateY(10%);
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5% 90% 0% 50%;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    background-color: var(--preto-principal);
+    color: var(--branco-principal);
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: var(--branco-principal);
+    color: var(--preto-principal);
+}
+
+.fa-twitter {
+    background: var(--branco-principal);
+    color: var(--preto-principal);
+}
+
+.fa-linkedin {
+    background: var(--branco-principal);
+    color: var(--preto-principal);
+}
+
+.fa-youtube {
+    background: var(--branco-principal);
+    color: var(--preto-principal);
+}
+
+.fa-instagram {
+    background: var(--branco-principal);
+    color: var(--preto-principal);
+}
+
+.fa-rss {
+    background: var(--branco-principal);
+    color: var(--preto-principal);
 }
 
 @media (max-width: 1200px) {
     .data {
-        padding: 10px;
         font-size: 16px;
     }
 }
