@@ -28,15 +28,15 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--scroll-bar-track);
+    background: var(--scroll-bar-thumb-hover);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--scroll-bar-thumb);
+    background: var(--vermelho-tijolo);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--scroll-bar-thumb-hover);
+    background: var(--vermelho-vinho);
 }
 
 body {
