@@ -58,3 +58,8 @@ if (window.location.href.indexOf("404") === -1) {
       console.error("Erro ao verificar a página: " + error);
     });
 }
+
+window.addEventListener('load', function () {
+  var loadingScreen = document.getElementById('loading-screen');
+  loadingScreen.style.display = 'none';
+});
