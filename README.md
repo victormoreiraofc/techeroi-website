@@ -24,7 +24,7 @@ O Techeroi é uma aplicação de website incrivelmente poderosa e fácil de usar
 
 #### 💻 Como Acessar o Web Site?
 
-* Acesse o link: https://victormoreiraofc.github.io/Techeroi/
+* Acesse o link: https://victormoreiraofc.github.io/techeroi-website/
 
 #### 🤝 Colaboradores
 
