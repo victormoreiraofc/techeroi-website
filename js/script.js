@@ -57,4 +57,4 @@ if (window.location.href.indexOf("404") === -1) {
     .catch(error => {
       console.error("Erro ao verificar a página: " + error);
     });
-  }
+}
