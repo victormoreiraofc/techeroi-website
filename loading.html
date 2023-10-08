@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/loading.css">
+    <title>Load Screen</title>
+</head>
+<body>
+    <h1 class="title">Loading</h1>
+    <div class="rainbow-marker-loader"></div>
+
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+    </script>    
+</body>
+</html>
