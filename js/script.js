@@ -44,8 +44,19 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function toggleLikeIcon(element) {
-  element.classList.toggle('active');
+    element.classList.toggle('active');
+
+    // Atualiza o contador de likes
+    var likeCountElement = document.getElementById('like-count');
+    var currentLikeCount = parseInt(likeCountElement.innerText);
+
+    if (element.classList.contains('active')) {
+        likeCountElement.innerText = currentLikeCount + 1;
+    } else {
+        likeCountElement.innerText = currentLikeCount - 1;
+    }
 }
+
 
 if (window.location.href.indexOf("404") === -1) {
   fetch("404.html")
