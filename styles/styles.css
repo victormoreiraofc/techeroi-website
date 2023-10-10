@@ -409,10 +409,13 @@ h1 {
     margin-top: -13%;
     margin-right: 23%;
 }
-
 #character-slider {
     overflow-x: scroll;
-    margin: 0% 5% 2% 5%;
+    margin: 0% 5% 2% 0%;
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #character-slider::-webkit-scrollbar {
@@ -431,6 +434,7 @@ h1 {
 #character-slider::-webkit-scrollbar-track {
     background-color: var(--cinza-prata);
     border-radius: 30px;
+    margin-left: 0;
 }
 
 .logo-nav {

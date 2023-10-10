@@ -43,25 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-<!-- ... ( código HTML anterior) ... -->
-
-<div id="character-slider" class="container fade-in-element">
-    <a href="tony-stark.html">
-        <div class="info-container">
-            <!-- ... (seu código anterior) ... -->
-            <div class="like-counter">
-                <span id="like-count-ts">0</span> Likes
-            </div>
-            <img src="assets/icons/like.png" alt="like-icon" class="icon-like" onclick="toggleLikeIcon('ts')">
-            <img src="assets/icons/click.png" alt="click-icon" class="icon-click">
-            <hr>
-        </div>
-    </a>
-    <!-- Mesmo padrão para os outros personagens -->
-</div>
-
-<!-- ... ( código HTML posterior) ... -->
-
+function toggleLikeIcon(element) {
+  element.classList.toggle('active');
+}
 
 if (window.location.href.indexOf("404") === -1) {
   fetch("404.html")
