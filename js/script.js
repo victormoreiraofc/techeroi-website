@@ -43,19 +43,24 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-function toggleLikeIcon(element) {
-    element.classList.toggle('active');
+<!-- ... ( código HTML anterior) ... -->
 
-    // Atualiza o contador de likes
-    var likeCountElement = document.getElementById('like-count');
-    var currentLikeCount = parseInt(likeCountElement.innerText);
+<div id="character-slider" class="container fade-in-element">
+    <a href="tony-stark.html">
+        <div class="info-container">
+            <!-- ... (seu código anterior) ... -->
+            <div class="like-counter">
+                <span id="like-count-ts">0</span> Likes
+            </div>
+            <img src="assets/icons/like.png" alt="like-icon" class="icon-like" onclick="toggleLikeIcon('ts')">
+            <img src="assets/icons/click.png" alt="click-icon" class="icon-click">
+            <hr>
+        </div>
+    </a>
+    <!-- Mesmo padrão para os outros personagens -->
+</div>
 
-    if (element.classList.contains('active')) {
-        likeCountElement.innerText = currentLikeCount + 1;
-    } else {
-        likeCountElement.innerText = currentLikeCount - 1;
-    }
-}
+<!-- ... ( código HTML posterior) ... -->
 
 
 if (window.location.href.indexOf("404") === -1) {
