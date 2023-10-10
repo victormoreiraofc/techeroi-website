@@ -409,13 +409,15 @@ h1 {
     margin-top: -13%;
     margin-right: 23%;
 }
+
 #character-slider {
     overflow-x: scroll;
     margin: 0% 5% 2% 0%;
     align-items: center;
     display: flex;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    position: relative;
 }
 
 #character-slider::-webkit-scrollbar {
@@ -468,38 +470,34 @@ h1 {
     opacity: 0.7;
 }
 
-.fa-facebook {
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram,
+.fa-github {
     background: var(--branco-principal);
     color: var(--preto-principal);
 }
 
-.fa-twitter {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-linkedin {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-youtube {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-instagram {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-rss {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
+.arrow {
+    border: solid var(--branco-principal);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
 
 @media screen and (max-width: 767px) {
-
     body {
         font-size: 14px;
     }
@@ -552,7 +550,6 @@ h1 {
 }
 
 @media screen and (min-width: 768px) {
-
     body {
         font-size: 16px;
     }
@@ -575,7 +572,7 @@ h1 {
     }
 
     .container {
-        padding: 15px;
+        padding: 15px 0px 15px 0px;
     }
 
     .information p {
