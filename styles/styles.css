@@ -544,8 +544,12 @@ h1 {
     }
 
     .dropbtn,
-    .dropdown {
+    .dropdown, .logo-nav {
         display: none;
+    }
+
+    .fa {
+        width: 16px;
     }
 }
 
