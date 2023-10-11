@@ -395,4 +395,10 @@ h2 {
         width: 100%;
         margin: 10px 0;
     }
+
+    .information {
+        flex-direction: column; /* Altera para uma direção vertical */
+        align-items: center; /* Centraliza verticalmente os elementos */
+        padding: 10px; /* Ajusta o espaçamento vertical */
+    }
 }
