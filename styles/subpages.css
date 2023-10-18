@@ -350,32 +350,12 @@ h2 {
     opacity: 0.7;
 }
 
-.fa-facebook {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-twitter {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-linkedin {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-youtube {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-instagram {
-    background: var(--branco-principal);
-    color: var(--preto-principal);
-}
-
-.fa-rss {
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram,
+.fa-github {
     background: var(--branco-principal);
     color: var(--preto-principal);
 }
