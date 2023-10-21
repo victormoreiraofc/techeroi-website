@@ -48,7 +48,7 @@ function toggleLikeIcon(element) {
 }
 
 if (window.location.href.indexOf("404") === -1) {
-  fetch("../content/404.html")
+  fetch("../404.html")
     .then(response => {
       if (!response.ok) {
         window.location.href = "../404.html";
