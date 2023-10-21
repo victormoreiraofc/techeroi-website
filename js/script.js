@@ -51,7 +51,7 @@ if (window.location.href.indexOf("404") === -1) {
   fetch("../content/404.html")
     .then(response => {
       if (!response.ok) {
-        window.location.href = "../404.html";
+        window.location.href = "../content/404.html";
       }
     })
     .catch(error => {
