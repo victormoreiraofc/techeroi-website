@@ -226,7 +226,9 @@ h2 {
 .side-divider-c,
 .side-divider-sa,
 .side-divider-cs,
-.side-divider-rv {
+.side-divider-rv,
+.side-divider-nl,
+.side-divider-sc {
     position: relative;
     bottom: 0;
     width: 220px;
@@ -254,6 +256,11 @@ h2 {
     top: 19%;
 }
 
+.side-divider-nl,
+.side-divider-sc {
+    top: 10%;
+}
+
 .school-name-ia,
 .school-name-robot,
 .school-name-py,
@@ -261,7 +268,9 @@ h2 {
 .school-name-sa,
 .school-name-cs,
 .school-name-rv,
-.school-name-c {
+.school-name-c,
+.school-name-nl,
+.school-name-sc {
     position: relative;
 }
 
@@ -283,6 +292,11 @@ h2 {
 
 .school-name-rv {
     top: 21.5%;
+}
+
+.school-name-nl,
+.school-name-sc {
+    top: 13%
 }
 
 .course-image,
@@ -377,8 +391,11 @@ h2 {
     }
 
     .information {
-        flex-direction: column; /* Altera para uma direção vertical */
-        align-items: center; /* Centraliza verticalmente os elementos */
-        padding: 10px; /* Ajusta o espaçamento vertical */
+        flex-direction: column;
+        /* Altera para uma direção vertical */
+        align-items: center;
+        /* Centraliza verticalmente os elementos */
+        padding: 10px;
+        /* Ajusta o espaçamento vertical */
     }
 }
