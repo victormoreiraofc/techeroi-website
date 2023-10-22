@@ -47,19 +47,6 @@ function toggleLikeIcon(element) {
   element.classList.toggle('active');
 }
 
-if (window.location.href.indexOf("404") === -1) {
-  const contentPath = "/content/404.html";
-  fetch(contentPath)
-    .then(response => {
-      if (!response.ok) {
-        window.location.href = contentPath;
-      }
-    })
-    .catch(error => {
-      console.error("Erro ao verificar a página: " + error);
-    });
-}
-
 window.addEventListener('load', function () {
   var loadingScreen = document.getElementById('loading-scr');
   loadingScreen.style.display = 'none';
