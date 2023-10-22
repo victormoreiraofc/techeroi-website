@@ -48,14 +48,11 @@ function toggleLikeIcon(element) {
 }
 
 if (window.location.href.indexOf("404") === -1) {
-  fetch("404.html")
+  const contentPath = "/content/404.html";
+  fetch(contentPath)
     .then(response => {
       if (!response.ok) {
-<<<<<<< HEAD
-        window.location.href = "404.html";
-=======
-        window.location.href = "../404.html";
->>>>>>> 85809e27eb80989e94dd4e3b655642bf45ef6135
+        window.location.href = contentPath;
       }
     })
     .catch(error => {
