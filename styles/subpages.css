@@ -374,6 +374,49 @@ h2 {
     color: var(--preto-principal);
 }
 
+@media screen and (max-width: 767px) {
+    #footer {
+        padding: 5px;
+        font-size: small;
+    }
+
+    #search-div {
+        width: 90%;
+    }
+
+    #search-button {
+        margin-right: 10px;
+    }
+
+    .dropbtn,
+    .dropdown, .logo-nav {
+        display: none;
+    }
+
+    .fa {
+        width: 16px;
+    }
+
+    .logo-container {
+        text-align: center;
+    }
+
+    .title-name {
+        margin: 25% 0% 0% 0%;
+        text-align: center;
+    }
+
+    
+    .caracter {
+        margin: 30% 10% 10% 10%;
+        text-align: center;
+    }
+
+    .main-conteiner p {
+        margin: 5%;
+    }
+}
+
 @media (max-width: 1200px) {
     .data {
         font-size: 16px;
