@@ -524,6 +524,7 @@ h1 {
 @media screen and (max-width: 767px) {
     body {
         font-size: 14px;
+        overflow-x: hidden;
     }
 
     .caracter {
