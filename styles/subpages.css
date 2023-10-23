@@ -374,6 +374,14 @@ h2 {
     color: var(--preto-principal);
 }
 
+#like-count {
+    position: relative;
+    top: -33px;
+    margin-left: 6.5%;
+    color: var(--branco-principal);
+    pointer-events: none;
+}
+
 @media screen and (max-width: 767px) {
     #footer {
         padding: 5px;

@@ -386,7 +386,7 @@ h1 {
 
 .icon-like {
     margin-top: -5%;
-    margin-right: 25%;
+    margin-right: 30%;
 }
 
 .icon-click {
@@ -396,7 +396,7 @@ h1 {
 
 .icon-like-rw {
     margin-top: 1%;
-    margin-right: 23%;
+    margin-right: 30%;
 }
 
 .icon-click-rw,
@@ -407,7 +407,7 @@ h1 {
 
 .icon-like-ll {
     margin-top: -13%;
-    margin-right: 23%;
+    margin-right: 30%;
 }
 
 #character-slider {
@@ -480,6 +480,47 @@ h1 {
     color: var(--preto-principal);
 }
 
+#click-count-tony-stark,
+#click-count-reed-richards,
+#click-count-victor-stone,
+#click-count-riri-williams,
+#click-count-lena-luthor {
+    margin-top: -11%;
+    margin-left: 40%;
+    color: black;
+    pointer-events: none;
+}
+
+#like-count {
+    margin-top: -10%;
+    margin-left: -12%;
+    color: black;
+    pointer-events: none;
+}
+
+.arrow {
+    border: solid var(--preto-principal);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: relative;
+    top: -46px;
+    margin-left: 88.5%;
+  }
+  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: relative;
+    top: -65px;
+    margin-left: 10.5%;
+  }
+
 @media screen and (max-width: 767px) {
     body {
         font-size: 14px;
@@ -527,7 +568,8 @@ h1 {
     }
 
     .dropbtn,
-    .dropdown, .logo-nav {
+    .dropdown,
+    .logo-nav {
         display: none;
     }
 
