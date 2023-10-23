@@ -687,7 +687,11 @@ h1 {
 
     #search-text {
         height: 25px;
-        font-size: 0px;
+        font-size: 14px;
+    }
+
+    #search-text::placeholder {
+        color: transparent;
     }
 }
 
