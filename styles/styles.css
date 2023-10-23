@@ -680,6 +680,15 @@ h1 {
     .arrow {
         display: none;
     }
+
+    #search-div {
+        width: 80%;
+    }
+
+    #search-text {
+        height: 25px;
+        font-size: 0px;
+    }
 }
 
 @media screen and (min-width: 768px) {
