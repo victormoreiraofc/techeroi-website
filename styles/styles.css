@@ -524,6 +524,9 @@ h1 {
 @media screen and (max-width: 767px) {
     body {
         font-size: 14px;
+    }
+
+    html, body {
         overflow-x: hidden;
     }
 
@@ -576,6 +579,10 @@ h1 {
 
     .fa {
         width: 16px;
+    }
+
+    .logo-container img {
+        max-width: 60%;
     }
 }
 
