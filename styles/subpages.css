@@ -397,7 +397,8 @@ h2 {
     }
 
     .dropbtn,
-    .dropdown, .logo-nav {
+    .dropdown,
+    .logo-nav {
         display: none;
     }
 
@@ -406,24 +407,25 @@ h2 {
     }
 
     .logo-container {
-        position: relative;
-        right: 15%;
+        text-align: center;
+        margin-top: 5%;
+        padding: 0;
     }
 
     .title-name {
-        margin: 25% 0% 0% 0%;
+        margin: 30% 0% 0% 0%;
         text-align: center;
         font-size: 200%;
     }
 
-    
+
     .caracter {
-        margin: 30% 10% 10% 10%;
+        margin-top: 30%;
         text-align: center;
     }
 
     .main-conteiner p {
-        margin: 5%;
+        margin: 5% 2% 5% 5%;
     }
 }
 
@@ -434,6 +436,7 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
     html,
     body {
         overflow-x: hidden;
@@ -450,16 +453,13 @@ h2 {
 
     .information {
         flex-direction: column;
-        /* Altera para uma direção vertical */
         align-items: center;
-        /* Centraliza verticalmente os elementos */
         padding: 10px;
-        /* Ajusta o espaçamento vertical */
     }
 
     #like-count {
-        top: -25px;
-        margin-left: 12%;
+        top: -22px;
+        margin-left: 14%;
     }
 
     .hr-data {
