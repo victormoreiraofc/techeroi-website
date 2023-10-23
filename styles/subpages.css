@@ -406,12 +406,14 @@ h2 {
     }
 
     .logo-container {
-        text-align: center;
+        position: relative;
+        right: 15%;
     }
 
     .title-name {
         margin: 25% 0% 0% 0%;
         text-align: center;
+        font-size: 200%;
     }
 
     
@@ -432,6 +434,11 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     .main-conteiner {
         flex-direction: column;
     }
@@ -448,5 +455,14 @@ h2 {
         /* Centraliza verticalmente os elementos */
         padding: 10px;
         /* Ajusta o espaçamento vertical */
+    }
+
+    #like-count {
+        top: -25px;
+        margin-left: 12%;
+    }
+
+    .hr-data {
+        display: none;
     }
 }
