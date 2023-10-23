@@ -354,7 +354,8 @@ h1 {
 
 .side-divider,
 .side-divider-rw,
-.side-divider-ll {
+.side-divider-ll,
+.side-divider-ts {
     position: relative;
     bottom: 0;
     width: 240px;
@@ -362,7 +363,8 @@ h1 {
     background-color: var(--cinza-escuro);
 }
 
-.side-divider {
+.side-divider,
+.side-divider-ts {
     top: -5%;
 }
 
@@ -379,17 +381,21 @@ h1 {
 .icon-like-rw,
 .icon-click-rw,
 .icon-like-ll,
-.icon-click-ll {
+.icon-click-ll,
+.icon-click-ts,
+.icon-like-ts {
     width: 8%;
     max-width: 210px;
 }
 
-.icon-like {
+.icon-like,
+.icon-like-ts {
     margin-top: -5%;
     margin-right: 30%;
 }
 
-.icon-click {
+.icon-click,
+.icon-click-ts {
     margin-top: -10%;
     margin-left: 20%;
 }
@@ -503,30 +509,31 @@ h1 {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
-  }
-  
-  .right {
+}
+
+.right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     position: relative;
     top: -46px;
     margin-left: 88.5%;
-  }
-  
-  .left {
+}
+
+.left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     position: relative;
     top: -65px;
     margin-left: 10.5%;
-  }
+}
 
 @media screen and (max-width: 767px) {
     body {
         font-size: 14px;
     }
 
-    html, body {
+    html,
+    body {
         overflow-x: hidden;
     }
 
@@ -583,6 +590,91 @@ h1 {
 
     .logo-container img {
         max-width: 60%;
+    }
+
+    .hr-data {
+        display: none;
+    }
+
+    .caracter-text-ts,
+    .caracter-text-rr,
+    .caracter-text-vs,
+    .caracter-text-rw,
+    .caracter-text-ll {
+        font-size: 90%;
+    }
+
+    .side-divider,
+    .side-divider-rw,
+    .side-divider-ll,
+    .side-divider-ts {
+        width: 180px;
+    }
+
+    .side-divider {
+        top: -6%;
+    }
+
+    .side-divider-rw {
+        top: -1%;
+    }
+
+    .side-divider-ll {
+        top: -11%;
+    }
+
+    .side-divider-ts {
+        top: -11%
+    }
+
+    .icon-like {
+        margin-top: -8%;
+        margin-right: 30%;
+    }
+
+    .icon-click {
+        margin-top: -9%;
+        margin-left: 20%;
+    }
+
+    .icon-like-rw {
+        margin-top: 0%;
+        margin-right: 30%;
+    }
+
+    .icon-click-rw,
+    .icon-click-ll {
+        margin-top: -9%;
+        margin-left: 23%;
+    }
+
+    .icon-like-ll {
+        margin-top: -16%;
+        margin-right: 30%;
+    }
+
+    .icon-like-ts {
+        margin-top: -15%;
+        margin-right: 30%;
+    }
+
+    .icon-click-ts {
+        margin-top: -9%;
+        margin-right: 0%;
+    }
+
+    #click-count-tony-stark,
+    #click-count-reed-richards,
+    #click-count-victor-stone,
+    #click-count-riri-williams,
+    #click-count-lena-luthor {
+        margin-top: -9%;
+        margin-left: 40%;
+    }
+
+    #like-count {
+        margin-top: -9%;
+        margin-left: -12%;
     }
 }
 
