@@ -418,7 +418,7 @@ h1 {
 
 #character-slider {
     overflow-x: scroll;
-    margin: 0% 5% 2% 0%;
+    margin: 0% 5% 0% 0%;
     align-items: center;
     display: flex;
     margin-right: 10%;
@@ -515,7 +515,7 @@ h1 {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     position: relative;
-    top: -46px;
+    top: -19px;
     margin-left: 88.5%;
 }
 
@@ -523,7 +523,7 @@ h1 {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     position: relative;
-    top: -65px;
+    top: -38px;
     margin-left: 10.5%;
 }
 
